@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>image</title>
+  <script>
+  function image(){
+    // まず全シーンを空にしてから
+    var images = document.getElementsByClassName("image");
+    for (var i = 0; i < images.length; i++) {
+      images[i].innerHTML = "";
+    }
+
+    /*---------------------------------------------
+     * イメージ1
+    ---------------------------------------------*/
+    // 以下のテキスト群からランダムに1個選択
+    var image_1 = [
+      [
+        "プリティ",
+        "ロマンチック",
+        "クリア",
+        "カジュアル",
+        "ナチュラル",
+        "エレガント",
+        "クール・カジュアル",
+        "ダイナミック",
+        "ゴージャス",
+        "クラシック",
+        "シック",
+        "ダンディ",
+        "モダン",
+      ],
+    ];
+    var image_1_number = Math.floor(Math.random() * image_1.length);
+    var image_1_number2 = Math.floor(Math.random() * image_1[image_1_number].length);
+    var target_image_1 = document.getElementById("image_1");
+
+    /*---------------------------------------------
+     * イメージ2
+    ---------------------------------------------*/
+    if ( image_1[image_1_number][image_1_number2] === "プリティ") {
+      var image_2 = [
+        [
+          "子供っぽい",
+          "甘い",
+          "かわいい",
+          "ういういしい",
+          "愛らしい",
+          "可憐な",
+        ],
+      ];
+    var image_2_number = Math.floor(Math.random() * image_2.length);
+    var image_2_number2 = Math.floor(Math.random() * image_2[image_2_number].length);
+    var target_image_2 = document.getElementById("image_2");
+    }
+
+    else if ( image_1[image_1_number][image_1_number2] === "ロマンチック") {
+      var image_2 = [
+        [
+          "柔らかい",
+          "しなやかな",
+          "淡白な",
+          "乙女の",
+          "明かるい",
+          "軽い",
+          "ファンタジックな",
+          "可憐な",
+          "甘美な",
+          "メルヘン調の",
+        ],
+      ];
+    var image_2_number = Math.floor(Math.random() * image_2.length);
+    var image_2_number2 = Math.floor(Math.random() * image_2[image_2_number].length);
+    var target_image_2 = document.getElementById("image_2");
+    }
+
+    else if ( image_1[image_1_number][image_1_number2] === "クリア") {
+      var image_2 = [
+        [
+          "無垢な",
+          "清らかな",
+          "純粋な",
+          "さらさらした",
+          "すがすがしい",
+          "冴えわたる",
+          "さっぱりした",
+          "細い",
+          "爽やかな",
+          "涼しい",
+          "清楚な",
+          "清冽な",
+          "清潔な",
+          "シンプルな",
+          "簡素な",
+          "新しい",
+          "すばやい",
+          "すっきりした",
+          "進歩的な",
+          "整然とした",
+          "理想的な",
+        ],
+      ];
+    var image_2_number = Math.floor(Math.random() * image_2.length);
+    var image_2_number2 = Math.floor(Math.random() * image_2[image_2_number].length);
+    var target_image_2 = document.getElementById("image_2");
+    }
+
+    else if ( image_1[image_1_number][image_1_number2] === "カジュアル") {
+      var image_2 = [
+        [
+          "親しみやすい",
+          "晴れやかな",
+          "肌ざわりのよい",
+          "あたたかい",
+          "健康な",
+          "楽しい",
+          "気軽な",
+          "開放的な",
+          "のびのびした",
+          "鮮やかな",
+          "はでな",
+          "おおらかな",
+          "活動的な",
+          "華やかな",
+          "刺激的な",
+        ],
+      ];
+    var image_2_number = Math.floor(Math.random() * image_2.length);
+    var image_2_number2 = Math.floor(Math.random() * image_2[image_2_number].length);
+    var target_image_2 = document.getElementById("image_2");
+    }
+
+    else if ( image_1[image_1_number][image_1_number2] === "ナチュラル") {
+      var image_2 = [
+        [
+          "なじみやすい",
+          "肌ざわりのよい",
+          "柔和な",
+          "開放的な",
+          "おおらかな",
+          "温雅な",
+          "まろやかな",
+          "素朴な",
+          "あっさりした",
+          "鮮やかな",
+          "やわらかな",
+          "新鮮な",
+          "みずみずしい",
+        ],
+      ];
+    var image_2_number = Math.floor(Math.random() * image_2.length);
+    var image_2_number2 = Math.floor(Math.random() * image_2[image_2_number].length);
+    var target_image_2 = document.getElementById("image_2");
+    }
+
+    else if ( image_1[image_1_number][image_1_number2] === "クール・カジュアル") {
+      var image_2 = [
+        [
+          "新しい",
+          "すばやい",
+          "若々しい",
+          "すっきりした",
+          "進歩的な",
+          "整然とした",
+          "理想的な",
+          "安全な",
+        ],
+      ];
+    var image_2_number = Math.floor(Math.random() * image_2.length);
+    var image_2_number2 = Math.floor(Math.random() * image_2[image_2_number].length);
+    var target_image_2 = document.getElementById("image_2");
+    }
+
+    else if ( image_1[image_1_number][image_1_number2] === "エレガント") {
+      var image_2 = [
+        [
+          "酵雅な",
+          "繊細な",
+          "ナイーブな",
+          "優しい",
+          "デリケートな",
+          "穏やかな",
+          "楚々とした",
+          "やすらかな",
+          "温雅な",
+          "優雅な",
+          "しゃれた",
+          "しっとりした",
+          "情趣ある",
+          "小粋な",
+          "ドレッシーな",
+          "奥ゆかしい",
+          "田園的な",
+          "古い",
+          "懐古的な",
+          "典雅な",
+          "気品のある",
+          "洗練された",
+          "シックな",
+          "平和な",
+        ],
+      ];
+    var image_2_number = Math.floor(Math.random() * image_2.length);
+    var image_2_number2 = Math.floor(Math.random() * image_2[image_2_number].length);
+    var target_image_2 = document.getElementById("image_2");
+    }
+
+    else if ( image_1[image_1_number][image_1_number2] === "ダイナミック") {
+      var image_2 = [
+        [
+          "弾力のある",
+          "行動的な",
+          "スポーティな",
+          "大胆な",
+          "強烈な",
+          "力動的な",
+          "激しい",
+          "精悍な",
+          "野性的な",
+          "男性的な（ウォーム）",
+          "粗けずりの",
+          "ワイルドな",
+        ],
+      ];
+    var image_2_number = Math.floor(Math.random() * image_2.length);
+    var image_2_number2 = Math.floor(Math.random() * image_2[image_2_number].length);
+    var target_image_2 = document.getElementById("image_2");
+    }
+
+    else if ( image_1[image_1_number][image_1_number2] === "ゴージャス") {
+      var image_2 = [
+        [
+          "艷やかな",
+          "華飾の",
+          "単純な",
+          "豊かな",
+          "艶っぽい",
+          "円熟した",
+          "こってりした",
+          "豪華な",
+          "凝った",
+          "味わい深い",
+          "濃い",
+          "エスニックの",
+          "力動的な",
+        ],
+      ];
+    var image_2_number = Math.floor(Math.random() * image_2.length);
+    var image_2_number2 = Math.floor(Math.random() * image_2[image_2_number].length);
+    var target_image_2 = document.getElementById("image_2");
+    }
+
+    else if ( image_1[image_1_number][image_1_number2] === "クラシック") {
+      var image_2 = [
+        [
+          "伝統的な",
+          "実用的な",
+          "土臭い",
+          "保守的な",
+          "男性的な（ウォーム）",
+          "ワイルドな",
+          "丈夫な",
+          "堅実な",
+          "落ち着いた",
+          "重い",
+          "どっしりした",
+        ],
+      ];
+    var image_2_number = Math.floor(Math.random() * image_2.length);
+    var image_2_number2 = Math.floor(Math.random() * image_2[image_2_number].length);
+    var target_image_2 = document.getElementById("image_2");
+    }
+
+    else if ( image_1[image_1_number][image_1_number2] === "シック") {
+      var image_2 = [
+        [
+          "典雅な",
+          "気品のある",
+          "洗練された",
+          "高尚な",
+          "高雅な",
+          "シックな",
+          "平和な",
+        ],
+      ];
+    var image_2_number = Math.floor(Math.random() * image_2.length);
+    var image_2_number2 = Math.floor(Math.random() * image_2[image_2_number].length);
+    var target_image_2 = document.getElementById("image_2");
+    }
+
+    else if ( image_1[image_1_number][image_1_number2] === "ダンディ") {
+      var image_2 = [
+        [
+          "風雅な",
+          "りりしい",
+          "じみな",
+          "格調ある",
+          "優雅な",
+          "あらたまった",
+          "ビシッとした",
+          "渋い",
+          "男性的な（クール）",
+          "風格のある",
+          "丹念な",
+          "重厚な",
+          "安定した",
+          "がっちりした",
+        ],
+      ];
+    var image_2_number = Math.floor(Math.random() * image_2.length);
+    var image_2_number2 = Math.floor(Math.random() * image_2[image_2_number].length);
+    var target_image_2 = document.getElementById("image_2");
+    }
+
+    else if ( image_1[image_1_number][image_1_number2] === "モダン") {
+      var image_2 = [
+        [
+          "精密な",
+          "静かな",
+          "冷静な",
+          "緻密な",
+          "合理的な",
+          "理知的な",
+          "緊張感のある",
+          "信頼できる",
+          "深遠な",
+          "技術的な",
+          "荘厳な",
+          "幾何的な",
+          "男性的な（クール）",
+          "ハイテクな",
+          "シャープな",
+          "いかめしい",
+          "メカニックな",
+          "崇高な",
+          "権威的な",
+          "冷徹な",
+          "厳粛な",
+        ],
+      ];
+    var image_2_number = Math.floor(Math.random() * image_2.length);
+    var image_2_number2 = Math.floor(Math.random() * image_2[image_2_number].length);
+    var target_image_2 = document.getElementById("image_2");
+    }
+
+    /*---------------------------------------------
+     * イメージ3
+    ---------------------------------------------*/
+    // 以下のテキスト群からランダムに1個選択
+    var image_3 = [
+      [
+        "プリティ",
+        "ロマンチック",
+        "クリア",
+        "カジュアル",
+        "ナチュラル",
+        "エレガント",
+        "クール・カジュアル",
+        "ダイナミック",
+        "ゴージャス",
+        "クラシック",
+        "シック",
+        "ダンディ",
+        "モダン",
+      ],
+    ];
+    var image_3_number = Math.floor(Math.random() * image_3.length);
+    var image_3_number2 = Math.floor(Math.random() * image_3[image_3_number].length);
+    var target_image_3 = document.getElementById("image_3");
+
+    if ( image_3[image_3_number][image_3_number2] === "プリティ") {
+      var image_4 = [
+        [
+          "子供っぽい",
+          "甘い",
+          "かわいい",
+          "ういういしい",
+          "愛らしい",
+          "可憐な",
+        ],
+      ];
+    var image_4_number = Math.floor(Math.random() * image_4.length);
+    var image_4_number2 = Math.floor(Math.random() * image_4[image_4_number].length);
+    var target_image_4 = document.getElementById("image_4");
+    }
+
+    else if ( image_3[image_3_number][image_3_number2] === "ロマンチック") {
+      var image_4 = [
+        [
+          "柔らかい",
+          "しなやかな",
+          "淡白な",
+          "乙女の",
+          "明かるい",
+          "軽い",
+          "ファンタジックな",
+          "可憐な",
+          "甘美な",
+          "メルヘン調の",
+        ],
+      ];
+    var image_4_number = Math.floor(Math.random() * image_4.length);
+    var image_4_number2 = Math.floor(Math.random() * image_4[image_4_number].length);
+    var target_image_4 = document.getElementById("image_4");
+    }
+
+    else if ( image_3[image_3_number][image_3_number2] === "クリア") {
+      var image_4 = [
+        [
+          "無垢な",
+          "清らかな",
+          "純粋な",
+          "さらさらした",
+          "すがすがしい",
+          "冴えわたる",
+          "さっぱりした",
+          "細い",
+          "爽やかな",
+          "涼しい",
+          "清楚な",
+          "清冽な",
+          "清潔な",
+          "シンプルな",
+          "簡素な",
+          "新しい",
+          "すばやい",
+          "すっきりした",
+          "進歩的な",
+          "整然とした",
+          "理想的な",
+        ],
+      ];
+    var image_4_number = Math.floor(Math.random() * image_4.length);
+    var image_4_number2 = Math.floor(Math.random() * image_4[image_4_number].length);
+    var target_image_4 = document.getElementById("image_4");
+    }
+
+    else if ( image_3[image_3_number][image_3_number2] === "カジュアル") {
+      var image_4 = [
+        [
+          "親しみやすい",
+          "晴れやかな",
+          "肌ざわりのよい",
+          "あたたかい",
+          "健康な",
+          "楽しい",
+          "気軽な",
+          "開放的な",
+          "のびのびした",
+          "鮮やかな",
+          "はでな",
+          "おおらかな",
+          "活動的な",
+          "華やかな",
+          "刺激的な",
+        ],
+      ];
+    var image_4_number = Math.floor(Math.random() * image_4.length);
+    var image_4_number2 = Math.floor(Math.random() * image_4[image_4_number].length);
+    var target_image_4 = document.getElementById("image_4");
+    }
+
+    else if ( image_3[image_3_number][image_3_number2] === "ナチュラル") {
+      var image_4 = [
+        [
+          "なじみやすい",
+          "肌ざわりのよい",
+          "柔和な",
+          "開放的な",
+          "おおらかな",
+          "温雅な",
+          "まろやかな",
+          "素朴な",
+          "あっさりした",
+          "鮮やかな",
+          "やわらかな",
+          "新鮮な",
+          "みずみずしい",
+        ],
+      ];
+    var image_4_number = Math.floor(Math.random() * image_4.length);
+    var image_4_number2 = Math.floor(Math.random() * image_4[image_4_number].length);
+    var target_image_4 = document.getElementById("image_4");
+    }
+
+    else if ( image_3[image_3_number][image_3_number2] === "クール・カジュアル") {
+      var image_4 = [
+        [
+          "新しい",
+          "すばやい",
+          "若々しい",
+          "すっきりした",
+          "進歩的な",
+          "整然とした",
+          "理想的な",
+          "安全な",
+        ],
+      ];
+    var image_4_number = Math.floor(Math.random() * image_4.length);
+    var image_4_number2 = Math.floor(Math.random() * image_4[image_4_number].length);
+    var target_image_4 = document.getElementById("image_4");
+    }
+
+    else if ( image_3[image_3_number][image_3_number2] === "エレガント") {
+      var image_4 = [
+        [
+          "酵雅な",
+          "繊細な",
+          "ナイーブな",
+          "優しい",
+          "デリケートな",
+          "穏やかな",
+          "楚々とした",
+          "やすらかな",
+          "温雅な",
+          "優雅な",
+          "しゃれた",
+          "しっとりした",
+          "情趣ある",
+          "小粋な",
+          "ドレッシーな",
+          "奥ゆかしい",
+          "田園的な",
+          "古い",
+          "懐古的な",
+          "典雅な",
+          "気品のある",
+          "洗練された",
+          "シックな",
+          "平和な",
+        ],
+      ];
+    var image_4_number = Math.floor(Math.random() * image_4.length);
+    var image_4_number2 = Math.floor(Math.random() * image_4[image_4_number].length);
+    var target_image_4 = document.getElementById("image_4");
+    }
+
+    else if ( image_3[image_3_number][image_3_number2] === "ダイナミック") {
+      var image_4 = [
+        [
+          "弾力のある",
+          "行動的な",
+          "スポーティな",
+          "大胆な",
+          "強烈な",
+          "力動的な",
+          "激しい",
+          "精悍な",
+          "野性的な",
+          "男性的な（ウォーム）",
+          "粗けずりの",
+          "ワイルドな",
+        ],
+      ];
+    var image_4_number = Math.floor(Math.random() * image_4.length);
+    var image_4_number2 = Math.floor(Math.random() * image_4[image_4_number].length);
+    var target_image_4 = document.getElementById("image_4");
+    }
+
+    else if ( image_3[image_3_number][image_3_number2] === "ゴージャス") {
+      var image_4 = [
+        [
+          "艷やかな",
+          "華飾の",
+          "単純な",
+          "豊かな",
+          "艶っぽい",
+          "円熟した",
+          "こってりした",
+          "豪華な",
+          "凝った",
+          "味わい深い",
+          "濃い",
+          "エスニックの",
+          "力動的な",
+        ],
+      ];
+    var image_4_number = Math.floor(Math.random() * image_4.length);
+    var image_4_number2 = Math.floor(Math.random() * image_4[image_4_number].length);
+    var target_image_4 = document.getElementById("image_4");
+    }
+
+    else if ( image_3[image_3_number][image_3_number2] === "クラシック") {
+      var image_4 = [
+        [
+          "伝統的な",
+          "実用的な",
+          "土臭い",
+          "保守的な",
+          "男性的な（ウォーム）",
+          "ワイルドな",
+          "丈夫な",
+          "堅実な",
+          "落ち着いた",
+          "重い",
+          "どっしりした",
+        ],
+      ];
+    var image_4_number = Math.floor(Math.random() * image_4.length);
+    var image_4_number2 = Math.floor(Math.random() * image_4[image_4_number].length);
+    var target_image_4 = document.getElementById("image_4");
+    }
+
+    else if ( image_3[image_3_number][image_3_number2] === "シック") {
+      var image_4 = [
+        [
+          "典雅な",
+          "気品のある",
+          "洗練された",
+          "高尚な",
+          "高雅な",
+          "シックな",
+          "平和な",
+        ],
+      ];
+    var image_4_number = Math.floor(Math.random() * image_4.length);
+    var image_4_number2 = Math.floor(Math.random() * image_4[image_4_number].length);
+    var target_image_4 = document.getElementById("image_4");
+    }
+
+    else if ( image_3[image_3_number][image_3_number2] === "ダンディ") {
+      var image_4 = [
+        [
+          "風雅な",
+          "りりしい",
+          "じみな",
+          "格調ある",
+          "優雅な",
+          "あらたまった",
+          "ビシッとした",
+          "渋い",
+          "男性的な（クール）",
+          "風格のある",
+          "丹念な",
+          "重厚な",
+          "安定した",
+          "がっちりした",
+        ],
+      ];
+    var image_4_number = Math.floor(Math.random() * image_4.length);
+    var image_4_number2 = Math.floor(Math.random() * image_4[image_4_number].length);
+    var target_image_4 = document.getElementById("image_4");
+    }
+
+    else if ( image_3[image_3_number][image_3_number2] === "モダン") {
+      var image_4 = [
+        [
+          "精密な",
+          "静かな",
+          "冷静な",
+          "緻密な",
+          "合理的な",
+          "理知的な",
+          "緊張感のある",
+          "信頼できる",
+          "深遠な",
+          "技術的な",
+          "荘厳な",
+          "幾何的な",
+          "男性的な（クール）",
+          "ハイテクな",
+          "シャープな",
+          "いかめしい",
+          "メカニックな",
+          "崇高な",
+          "権威的な",
+          "冷徹な",
+          "厳粛な",
+        ],
+      ];
+    var image_4_number = Math.floor(Math.random() * image_4.length);
+    var image_4_number2 = Math.floor(Math.random() * image_4[image_4_number].length);
+    var target_image_4 = document.getElementById("image_4");
+    }
+
+    target_image_1.innerHTML = image_1[image_1_number][image_1_number2] + "な（" + image_2[image_2_number][image_2_number2] + "）登場人物1";
+    target_image_3.innerHTML = image_3[image_3_number][image_3_number2] + "な（" + image_4[image_4_number][image_4_number2] + "）登場人物2";
+  }
+  </script>
+</head>
+<body>
+  <h1>image</h1>
+  <p>画像タップで生成</p>
+  <img width="500" onclick="image()" src="1168c3b4.jpg" />
+  <div class="image" id="image_1"></div>
+  <div class="image" id="image_2"></div>
+  <div class="image" id="image_3"></div>
+  <div class="image" id="image_4"></div>
+</body>
+</html>
